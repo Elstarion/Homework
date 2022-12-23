@@ -5,15 +5,27 @@ body {
 
 .position {
   font-weight: bold;
+  border-bottom: 2px solid rgb(5, 255, 242);
+}
+
+img {
+  border: 2px solid rgb(5, 255, 242);;
+  padding: 10px;
 }
 
 .name {
   font-style: italic;
+  border-bottom: 2px solid rgb(5, 255, 242);
+}
+
+table {
+  background-color:  rgb(166, 240, 166);
 }
 
 .headings {
   text-transform: uppercase;
   font-weight: bold;
+  background-color: rgb(5, 255, 242);
 }
 
 a:link {
@@ -31,6 +43,11 @@ a:hover {
 
 ul {
   list-style-type: square;
+  border-bottom: 2px solid rgb(5, 255, 242);
+}
+
+ol {
+  border-bottom: 2px solid rgb(5, 255, 242);
 }
 
 
