@@ -29,11 +29,12 @@ table {
 }
 
 a:link {
+  color: #00f;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #00f;
+  color: #005;
   text-decoration: underline;
 }
 
