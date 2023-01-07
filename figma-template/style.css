@@ -6,7 +6,7 @@
 @font-face {
   font-family: "Amstelvar";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2729/AmstelvarAlpha-VF.ttf")
-    format("truetype");
+  format("truetype");
 }
 
 .top-main {
