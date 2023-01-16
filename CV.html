@@ -2,89 +2,107 @@
 <html>
   <head>
     <title>CV</title>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
   </head>
-  <body>
-
-    <div class="header">
-      <div>
-        <h1 class="name border-bot">Vladyslav Lapytskyi</h1>
-        <p class="position border-bot">Marine Engineer</p>
-        <a href="./form.html">Hire me</a>
-      </div>    
+  <body> 
+    <div class="container">
+      <div class="left-section">
+        <h1 class="name font-Inter ">Vladyslav<br> <span>Lapytskyi</span></h1>
         <img src="photo_2022-12-10_08-31-25.jpg">   
+
+        <div class="contact">
+          <p class="title font-Inter">Contact</p>
+          <div class="contact-grid">
+            <div>
+              <p class="contact-heading font-Inter">Adress</p>
+              <p class="contact-item font-Inter">Odessa, Ukraine</p>
+            </div>
+
+            <div>
+              <p class="contact-heading font-Inter">Phone</p>
+              <p class="contact-item font-Inter">+380963048542</p>
+            </div>
+
+            <div>
+              <p class="contact-heading font-Inter">E-Mail</p>
+              <a href="mailto: vladlapitsky37@gmail.com" class="contact-item font-Inter">vladlapitsky37@gmail.com</a>
+            </div>
+            
+            <div>
+              <p class="contact-heading font-Inter">Facebook</p>
+              <a href="https://www.facebook.com/Elstarion" class="contact-item font-Inter" target="_blank">facebook.com/Elstarion</a>
+            </div>        
+          </div>
+
+          <p class="title font-Inter">Languages</p>
+            <div class="languages">
+              <p class="languages-items font-Inter">Ukrainian - C2</p>
+              <p class="languages-items font-Inter">English - B2</p>
+            </div>
+        </div>          
+      </div>          
+
+      <div class="right-section">
+        <div class="summary">
+          <p class="rs-titles font-Inter">Summary</p>
+          <p class="sumtext font-Inter">I'm a former Marine Engineer with 8 years of experience. 
+            Throughout my marine career I've been working on different types of ships such as bulk carriers, containers, car carriers etc. 
+            Most of those ships were older than me, few of them were relatively new. 
+            My first voyages were about gaining experience by assisting to 3rd Engineer and working on such mechanisms as pumps, compressors, 
+            purifiers, diesel engines, boilers, fresh water generators, various safety equipment and so on. 
+            All of which eventually turned into my direct responsibility.
+          </p>
+        </div>
+
+        <div class="skills">
+          <p class="rs-titles font-Inter">Skills Highlights</p>
+          <div class="split-list font-Inter">
+            <ul>
+              <li>Pumps</li>
+              <li>Compressors</li>
+              <li>Diesel engines</li>
+              <li>Boilers</li>
+              <li>Purifiers</li>
+              <li>FWG</li>
+              <li>Safety equipment</li>
+              <li>HTML</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience  font-Inter">
+          <p class="rs-titles font-Inter">Work Experience</p>
+          <div class="exp-description">
+            <p><span>Name of employer:</span> <a href="https://www.angloeastern.com/" target="_blank">Anglo Eastern</a>, Odessa</p>
+            <p><span>Dates of employment:</span> 06/2019 - 12/2021</p>
+            <p><span>Job title:</span> 3rd Engineer</p>
+            <p><span>Job description:</span> Responsible for maintenance and repair of the mechanisms stated in the skills section.
+                Carried out performance tests to track deviations in their work cycles.
+            </p>
+          </div>
+
+          <div class="exp-description">
+            <p><span>Name of employer:</span> <a href="https://www.msc.com/" target="_blank">MSC</a>, Odessa</p>
+            <p><span>Dates of employment:</span> 02/2013 - 01/2019</p>
+            <p><span>Job title:</span> Junior Engineer</p>
+            <p><span>Job description:</span> Learned various ship's systems and mechanisms. 
+                Responsible for fuel and water analysis. 3rd Engineer's assistant.
+            </p>
+          </div>    
+        </div>
+
+        <div class="education  font-Inter">
+          <p class="rs-titles">Education</p>
+          <div class="exp-description">
+            <p><span>Dates of studying:</span>  from 2010 - to 2016</p>             
+            <p><span>Name of institution:</span> National University "Odessa Maritime Academy"</p>
+            <p><span>Degree and major:</span> Sp.Ed., Marine Power Plant Operation & Maintenance</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="experience">
-      <h2>Work Experience</h2>
-
-      <table border="1" cellspacing="0" cellpadding="2px">
-        <thead>        
-          <tr class="headings">
-            <th>Period:</th>
-            <th>Position:</th>
-          </tr>       
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>2019 - 2021</td>
-            <td>
-              3rd Engineer at <a href="https://www.angloeastern.com/" target="_blank">Anglo Eastern</a>
-            </td>
-          </tr>
-
-          <tr>
-            <td rowspan="3" class="headings">
-              Description
-            </td>
-            <td>Responsible for such mechanisms as diesel generators, compressors, pumps, etc.</td>
-          </tr>
-
-          <tr>
-            <td>Making records about quantity of stored fuel onboard.</td>
-          </tr>
-
-          <tr>
-            <td>Carriyng out performance tests to track changes in above stated mechanisms.</td>
-          </tr>
-
-          <tr>
-            <td>2017 - 2019</td>
-            <td>
-              Junior Engineer at <a href="https://www.angloeastern.com/" target="_blank">Anglo Eastern</a>
-            </td>
-          </tr>
-
-          <tr>
-            <td rowspan="2" class="headings">
-              Description
-            </td>
-            <td>Learning various ship's systems and mechanisms. 3rd Engineer's assistant.</td>
-          </tr>
-          
-          <tr>
-            <td>Responsible for fuel and water analysis tests.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Skills:</h2>
-
-      <ul class="border-bot">
-        <li>English</li>
-        <li>Analytical thinking</li>
-        <li>Disciplined</li>
-      </ul>
-
-      <h2>Achivements:</h2>
-
-      <ol class="border-bot">
-        <li>Took part in major repairs of the engines sized as three-storey house.</li>
-        <li>Visited a lot of beautiful places.</li>
-        <li>Left my previous job. (yes this is an achivement for me)</li>
-      </ol>
-    </div>
-
   </body>
 </html>
