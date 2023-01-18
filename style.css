@@ -6,6 +6,7 @@
 .font-Inter {
   font-family: 'Inter';
   font-style: normal;
+  font-weight: 600;
 }
 
 .container {
@@ -19,24 +20,29 @@
   background: #86A3B4;
 }
 
-.name {
-  font-weight: 600;
+.name {  
+  width: 190px;
   font-size: 40px;
-  color: white;
-  margin: 58px 0 36px 40px;
+  color: #fff;
+  margin: 58px 85px 20px 40px;
 }
 
 .name span {
-  color: blue;
+  color: #1C2E8C;
+}
+
+.hire {
+  display: block;
+  width: 60px;
+  margin: auto auto 20px auto;
 }
 
 .contact {
-  margin: 50px 0 0 40px;
+  margin: 50px 11px auto 40px;
 }
 
 .title {
-  font-weight: 500;
-  width: 200px;
+  width: 289px;
   font-size: 32px;
   line-height: 39px;
   color: #263036;
@@ -52,14 +58,12 @@
 
 .contact-heading {
   padding-bottom: 11px;  
-  font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: #263036;
 }
 
 .contact-item {
-  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #263036;
@@ -70,16 +74,10 @@
 }
 
 .languages-items {
-  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #1E1E1E;
   padding-bottom: 15px;
-}
-
-img {  
-  width: 300px;
-  height: 300px;
 }
 
 .right-section {
@@ -89,60 +87,48 @@ img {
 .rs-titles {
   width: 660px;
   font-size: 36px;
-  font-weight: 600;
   line-height: 44px;
   color: #1E1E1E;
   border-bottom: 5px solid black;
   margin-bottom: 28px;
 }
 
-.summary {
+.rs-block {
   margin-top: 58px;
   width: 750px;
 }
 
 .sumtext {
   font-size: 16px;
-  font-weight: 600;
   line-height: 19px;
   color: #263036;
-}
-
-.skills {
-  margin: 50px 0 50px 0;
 }
 
 .split-list {
   column-count: 2;
   margin-left: 17px;  
   font-size: 16px;
-  font-weight: 600;
   line-height: 19px;
   color: #263036;
 }
 
-.experience { 
-  font-weight: 300;
+.exp-description {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   color: #000000;
-  margin-bottom: 53px;
-  width: 750px;
-}
-
-.exp-description {
   margin-bottom: 15px;
 }
 
-.exp-description span {
-  font-weight: 600;
-}
-
-.education {
+.ed-description {
   font-size: 16px;
+  font-weight: 400;
   line-height: 19px;
   color: #263036;
+}
+
+.rs-block span {
+  font-weight: 600;
 }
 
 a:link {
@@ -154,8 +140,6 @@ a:visited {
   color: #005;
 }
 
-
-
-
-
-
+a:hover {
+  text-decoration: underline;
+}
