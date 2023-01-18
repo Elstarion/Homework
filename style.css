@@ -19,6 +19,7 @@ body {
 .header > img {
   width: 100px;
   height: 100px;
+  object-fit: cover;
   padding: 10px;
   border: 2px solid rgb(5, 255, 242);
 }
@@ -55,7 +56,3 @@ a:hover {
 ul {
   list-style-type: square;
 }
-
-
-
-
