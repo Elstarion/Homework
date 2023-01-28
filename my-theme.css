@@ -1,0 +1,21 @@
+.my-theme {
+  --margin-container: auto;
+  --margin-name: 58px 85px 20px 40px;
+  --margin-hire-link: auto auto 20px auto;
+  --margin-contact-block: 50px 11px auto 40px;
+  --margin-title: 35px 0 35px 0;  
+  --padding-bottom-contact-heading: 11px;
+  --padding-bottom-languages-items: 15px;
+  --padding-left--right-section: 55px;
+  --margin-rs-titles: 58px 0 28px 0;
+  --margin-left-split-list: 17px;  
+  --margin-bottom-exp-description: 15px;  
+  --background-left-section: #848C8E;  
+  --background-right-section: #435058;
+  --color-name: #DCF763;
+  --color-surname: #1C2E8C;
+  --color-main: #F1F2EE;
+  --color-secondary: #BFB7B6;
+  --color-link: #00f;
+  --color-visited-link: #005;
+}
