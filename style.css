@@ -228,9 +228,7 @@ textarea[id] {
   height: 139px;
 }
 
-label::after, 
-textarea::after,
-select::after {
+label::after {
   content: '*';
   color: #ff0000;
   padding-left: 5px;
