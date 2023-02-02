@@ -19,13 +19,6 @@
   background: var(--background-left-section);
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
-  max-height: 100vh;
-  overflow-y: scroll;
-}
-
 .name {  
   width: 190px;
   font-size: 40px;
@@ -144,6 +137,30 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    width: 385px;   
+  }
+
+  .right-section {
+    padding-left: 40px;
+  }  
+
+  .rs-block, 
+  .rs-titles, 
+  .sumtext, 
+  .exp-description, 
+  .ed-description {
+    width: 328px;
+  }
+
+  .split-list {
+    width: 290px;
+    margin-left: 25px;
+  }
 }
 
 /* Form styles */
