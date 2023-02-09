@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+:root {
+  --margin-container: auto;
+  --margin-name: 58px 85px 20px 40px;
+  --margin-hire-link: auto auto 20px auto;
+  --margin-contact-block: 50px 11px auto 40px;
+  --margin-title: 35px 0 35px 0;  
+  --padding-bottom-contact-heading: 11px;
+  --padding-bottom-languages-items: 15px;
+  --padding-left--right-section: 55px;
+  --margin-rs-titles: 58px 0 28px 0;
+  --margin-left-split-list: 17px;  
+  --margin-bottom-exp-description: 15px; 
+}
+
 .font-Inter {
   font-family: 'Inter';
   font-style: normal;
@@ -12,12 +26,26 @@
 .container {
   display: flex; 
   width: 1200px;
-  margin: var(--margin-container)
+  margin: var(--margin-container);
 }
 
 .left-section {
   background: var(--background-left-section);
   box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
+  position: relative;
+  z-index: 1;
+  animation: upwards 1.5s .5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes upwards {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .name {  
@@ -37,11 +65,13 @@
   margin: var(--margin-hire-link);
 }
 
+img {
+  transition: 1s;
+}
+
 img:hover {
   transform: scale(1.75) translate(82.5px, 20%);
   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.25);
-  position: relative;
-  z-index: 1;
 }
 
 .contact {
@@ -86,6 +116,8 @@ img:hover {
 .right-section {
   padding-left: var(--padding-left--right-section);
   background: var(--background-right-section);
+  animation: upwards 1.5s 1s linear forwards;
+  opacity: 0;
 }
 
 .rs-titles {
@@ -122,6 +154,7 @@ img:hover {
   color: var(--color-main);
   margin-bottom: var(--margin-bottom-exp-description);
   opacity: .7;
+  transition: 2s;
 }
 
 .exp-description:hover {
@@ -177,7 +210,7 @@ a:hover {
 
   img {
     pointer-events: none;
-  }  
+  }
 }
 
 /* Form styles */
@@ -208,7 +241,18 @@ form {
   width: inherit;
   position: absolute;
   top: calc(50% - 277px); 
-  left: calc(50% - 512px);  
+  left: calc(50% - 512px);
+  animation: shrink 1.5s linear;
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(2);
+    opacity: 0;
+  }
+  to { 
+    transform: scale(1);
+  }
 }
 
 fieldset {

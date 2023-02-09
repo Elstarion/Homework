@@ -1,15 +1,4 @@
-.main-theme {
-  --margin-container: auto;
-  --margin-name: 58px 85px 20px 40px;
-  --margin-hire-link: auto auto 20px auto;
-  --margin-contact-block: 50px 11px auto 40px;
-  --margin-title: 35px 0 35px 0;  
-  --padding-bottom-contact-heading: 11px;
-  --padding-bottom-languages-items: 15px;
-  --padding-left--right-section: 55px;
-  --margin-rs-titles: 58px 0 28px 0;
-  --margin-left-split-list: 17px;  
-  --margin-bottom-exp-description: 15px;  
+.main-theme {  
   --background-left-section: #86A3B4;  
   --color-name: #fff;
   --color-surname: #1C2E8C;
