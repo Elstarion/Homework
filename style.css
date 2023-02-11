@@ -270,12 +270,25 @@
 .info form fieldset div input:invalid + .error, .info form fieldset div select:invalid + .error, .info form fieldset div textarea:invalid + .error {
   visibility: visible;
 }
+.info form fieldset div textarea {
+  resize: none;
+  height: 139px;
+}
+.info form fieldset div select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(./mdi_arrow_drop_down.png);
+  background-repeat: no-repeat;
+  background-position: center right 0;
+}
 .info form fieldset div .error {
   visibility: hidden;
   color: #ff0000;
   font-size: 12px;
 }
-.info form fieldset div input[type=submit], .info form fieldset div select[type=submit], .info form fieldset div textarea[type=submit] {
+.info form fieldset div input[type=submit], .info form fieldset div textarea[type=submit], .info form fieldset div select[type=submit] {
   border: none;
   border-radius: 4px;
   background-color: #0048D9;
@@ -286,20 +299,6 @@
   padding: 0;
   transition: 2s;
 }
-.info form fieldset div input[type=submit]:hover, .info form fieldset div select[type=submit]:hover, .info form fieldset div textarea[type=submit]:hover {
+.info form fieldset div input[type=submit]:hover, .info form fieldset div textarea[type=submit]:hover, .info form fieldset div select[type=submit]:hover {
   background-color: #002266;
-}
-.info form fieldset div textarea {
-  resize: none;
-  height: 139px;
-}
-.info form fieldset div select {
-  background: #F8FAFC;
-  cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url(./mdi_arrow_drop_down.png);
-  background-repeat: no-repeat;
-  background-position: center right 0;
 }/*# sourceMappingURL=style.css.map */
