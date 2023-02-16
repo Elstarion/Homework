@@ -194,6 +194,12 @@
   }
 }
 /* Form styles */
+@keyframes table {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 @keyframes shrink {
   from {
     transform: scale(2);
@@ -203,6 +209,10 @@
     transform: scale(1);
   }
 }
+.gradient {
+  background: linear-gradient(to right, #e68b04, #03c93e);
+}
+
 .font-Plex {
   font-family: "IBM Plex Sans";
   font-style: normal;
@@ -211,94 +221,13 @@
   line-height: 143%;
 }
 
-.info {
-  width: 1024px;
-  display: grid;
-  gap: 25px;
-  margin: 10px auto auto auto;
+table {
+  animation: table 1s 2s linear forwards;
+  opacity: 0;
+  transform: translateY(-4rem);
 }
-.info table, .info th, .info td {
-  width: 400px;
-  text-align: center;
-  border: 2px solid #000;
-  border-collapse: collapse;
-}
-.info form {
-  width: inherit;
-  position: absolute;
-  top: calc(50% - 277px);
-  left: calc(50% - 512px);
+
+form {
   animation: shrink 1.5s linear;
-}
-.info form fieldset {
-  border: 2px dashed #A020F0;
-}
-.info form fieldset div {
-  margin: 20px 0 20px 20px;
-}
-.info form fieldset div label {
-  display: block;
-  margin-bottom: 3px;
-}
-.info form fieldset div label:after {
-  content: "*";
-  color: #ff0000;
-  padding-left: 5px;
-}
-.info form fieldset div input, .info form fieldset div select, .info form fieldset div textarea {
-  box-sizing: border-box;
-  width: 460px;
-  height: 48px;
-  padding: 12px;
-  border: none;
-  background: #F8FAFC;
-  border-radius: 4px;
-  font-size: 16px;
-}
-.info form fieldset div input::-moz-placeholder, .info form fieldset div select::-moz-placeholder, .info form fieldset div textarea::-moz-placeholder {
-  color: #B8BCCA;
-}
-.info form fieldset div input::placeholder, .info form fieldset div select::placeholder, .info form fieldset div textarea::placeholder {
-  color: #B8BCCA;
-}
-.info form fieldset div input:focus, .info form fieldset div select:focus, .info form fieldset div textarea:focus {
-  outline: 1px solid #0048D9;
-}
-.info form fieldset div input:invalid, .info form fieldset div select:invalid, .info form fieldset div textarea:invalid {
-  outline: 1px solid #ff0000;
-}
-.info form fieldset div input:invalid + .error, .info form fieldset div select:invalid + .error, .info form fieldset div textarea:invalid + .error {
-  visibility: visible;
-}
-.info form fieldset div textarea {
-  resize: none;
-  height: 139px;
-}
-.info form fieldset div select {
-  cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url(./mdi_arrow_drop_down.png);
-  background-repeat: no-repeat;
-  background-position: center right 0;
-}
-.info form fieldset div .error {
-  visibility: hidden;
-  color: #ff0000;
-  font-size: 12px;
-}
-.info form fieldset div input[type=submit], .info form fieldset div textarea[type=submit], .info form fieldset div select[type=submit] {
-  border: none;
-  border-radius: 4px;
-  background-color: #0048D9;
-  color: #fff;
-  cursor: pointer;
-  width: 92px;
-  height: 32px;
-  padding: 0;
-  transition: 2s;
-}
-.info form fieldset div input[type=submit]:hover, .info form fieldset div textarea[type=submit]:hover, .info form fieldset div select[type=submit]:hover {
-  background-color: #002266;
+  margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */

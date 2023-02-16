@@ -3,72 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <link href="./style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
   <title>Contact form</title>
 </head>
-<body>
-  <div class="info font-Plex">
-    <h1>Hire me</h1>
+<body class="gradient">
+  <div class="d-flex justify-content-center">
+    <div>
+      <table class="mt-2 table table-light table-hover table-bordered">
+        <tr>
+          <th>Phone</th>
+          <td>+38 096 304 85 42</td>
+        </tr>
+  
+        <tr>
+          <th>Address</th>
+          <td>Odesa reg., Kiliya</td>
+        </tr>        
+      </table>
+    </div>      
+  </div>
+  
+  <div class="d-flex justify-content-center font-Plex">
+    <div class="col-3">
+      <form class="needs-validation" novalidate> 
+        <fieldset>
+          <legend>Contact form</legend>
+          <div class="mb-3 col-12">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">
+              Please enter email.
+            </div>
+          </div>
+          <div class="mb-3 col-12">
+            <label for="textarea" class="form-label">Description:</label>
+            <textarea class="form-control form-control-lg" id="textarea" rows="4" required></textarea>
+            <div class="invalid-feedback">
+              Please type your message.
+            </div>
+          </div>          
+          <div class="mb-3 col-12">
+            <label for="select" class="form-label">Work type:</label>
+            <select id="select" class="form-select" required>
+              <option></option>
+              <option value="office">Office</option>
+              <option value="remote">Remote</option>
+              <option value="one-time-project">One-time project</option>
+            </select>
+            <div class="invalid-feedback">
+              Please choose work type.
+            </div>
+          </div>
+            <button type="submit" class="btn btn-outline-primary">Hire me</button>
+        </fieldset>
+      </form>      
+    </div>      
+  </div>     
 
-    <h2>Contact information</h2>
+  <script>
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
 
-    <table>
-      <tr>
-        <th>Phone</th>
-        <td>+38 096 304 85 42</td>
-      </tr>
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
 
-      <tr>
-        <th>Address</th>
-        <td>Odesa reg., Kiliya</td>
-      </tr>
-    </table>     
-
-    <form action="" method="get">
-      <fieldset>
-        <legend>Contact form</legend>
-        
-        <div>
-          <label for="e-mail">E-mail:</label>
-          <input 
-          class="font-Plex"
-          id="e-mail" 
-          type="email"
-          name="email" 
-          placeholder="Enter your email" 
-          required>
-          <p class="error">Error message</p>
-        </div>
-
-        <div>
-          <label for="description">Description:</label>
-          <textarea 
-            id="description" 
-            class="font-Plex"
-            minlength="5"
-            placeholder="Enter your message here" 
-            required></textarea>         
-          <p class="error">Error message</p>
-        </div>
-
-        <div>
-          <label for="work-type" class="font-Plex">Work type:</label>
-          <select id="work-type" name="work-type" required>
-            <option selected></option>
-            <option value="office">Office</option>
-            <option value="remote">Remote</option>
-            <option value="one-time-project">One-time project</option>
-          </select>
-          <p class="error">Error message</p>
-        </div>
-
-        <div>
-          <input type="submit" value="Hire me" class="font-Plex">
-        </div>        
-      </fieldset>
-    </form>  
-  </div>    
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>
