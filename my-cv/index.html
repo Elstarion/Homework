@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
+    <script src="../script.js" defer></script>
   </head>
   <body class="main-theme"> 
     <div class="container font-Inter">
@@ -32,12 +33,12 @@
 
             <div>
             <p class="contact-heading">E-Mail</p>
-            <a href="mailto: vladlapitsky37@gmail.com" class="contact-item">vladlapitsky37@gmail.com</a>
+            <a href="mailto: vladlapitsky37@gmail.com" class="contact-item" id="contact-link">vladlapitsky37@gmail.com</a>
             </div>
 
             <div>
             <p class="contact-heading">Facebook</p>
-            <a href="https://www.facebook.com/Elstarion" class="contact-item" target="_blank">facebook.com/Elstarion</a>
+            <a href="https://www.facebook.com/Elstarion" class="contact-item" id="contact-link" target="_blank">facebook.com/Elstarion</a>
             </div>        
           </div>
 
@@ -49,9 +50,11 @@
         </div> 
       </div>          
 
-      <div class="right-section">
+      <div class="right-section">        
         <div class="rs-block">
-          <p class="rs-titles">Summary</p>
+          <p class="rs-titles" id="one">
+            <a href="#one" class="label">A</a>
+            Summary</p>
           <p class="sumtext">I'm a former Marine Engineer with 8 years of experience. 
             Throughout my marine career I've been working on different types of ships such as bulk carriers, containers, car carriers etc. 
             Most of those ships were older than me, few of them were relatively new. 
@@ -62,7 +65,9 @@
         </div>
 
         <div class="rs-block">
-          <p class="rs-titles">Skills Highlights</p>
+          <p class="rs-titles" id="two">
+            <a href="#two" class="label">B</a>
+            Skills Highlights</p>
           <div class="split-list">
             <ul>
               <li>Pumps</li>
@@ -78,7 +83,9 @@
         </div>
 
         <div class="rs-block">
-          <p class="rs-titles">Work Experience</p>
+          <p class="rs-titles" id="three">
+            <a href="#three" class="label">C</a>
+            Work Experience</p>
           <div class="exp-description">
             <p><span>Name of employer:</span> <a href="https://www.angloeastern.com/" target="_blank">Anglo Eastern</a>, Odessa</p>
             <p><span>Dates of employment:</span> 06/2019 - 12/2021</p>
@@ -99,9 +106,11 @@
         </div>
 
         <div class="rs-block">
-          <p class="rs-titles">Education</p>
+          <p class="rs-titles" id="four">
+            <a href="#four" class="label">D</a>
+            Education</p>
           <div class="ed-description">
-            <p><span>Dates of studying:</span> from 2010 - to 2016</p>             
+            <p><span>Dates of studying:</span> from 2010 - to 2016</p>          
             <p><span>Name of institution:</span> National University "Odessa Maritime Academy"</p>
             <p><span>Degree and major:</span> Sp.Ed., Marine Power Plant Operation & Maintenance</p>
           </div>
