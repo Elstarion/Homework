@@ -111,7 +111,6 @@
 }
 .container .right-section .rs-block {
   width: 750px;
-  min-height: 80vh;
 }
 .container .right-section .rs-block .rs-titles {
   width: 660px;
@@ -163,6 +162,17 @@
   font-weight: 400;
   line-height: 19px;
   color: var(--color-main);
+}
+.container .right-section .rs-block .project-link {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .right-section .rs-block .project-link:not(:last-child) {
+  margin-bottom: 15px;
+}
+.container .right-section .rs-block .project-link .project-description {
+  font-size: 14px;
 }
 
 a:link {

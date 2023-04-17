@@ -121,7 +121,7 @@ $margin-bottom-exp-description: 15px;
 
         .rs-block {
             width: 750px;
-            min-height: 80vh;
+            // min-height: 80vh;
 
             .rs-titles {
                 width: 660px;
@@ -180,6 +180,20 @@ $margin-bottom-exp-description: 15px;
                 line-height: 19px;
                 color: var(--color-main);
             }
+
+            .project-link {
+                display: block;
+                width: fit-content;
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                .project-description {
+                    font-size: 14px;
+                    // display: inline-block;
+                }
+            }            
         }
     }    
 }
