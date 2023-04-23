@@ -24,25 +24,42 @@ document.addEventListener('keyup', function(e) {
     })      
 })
 
-window.addEventListener('load', async function() {
-    const repos = await fetch('https://api.github.com/users/Elstarion/repos');
-    const reposJson = await repos.json();
-    const output = document.querySelector('.repos');
-    reposJson.forEach((element) => {
-        let div = document.createElement('div');
-        let a = document.createElement('a');
-        a.setAttribute('href', `${element.html_url}`);
-        a.setAttribute('target', '_blank');
-        a.innerHTML = element.full_name;
-        div.classList.add('project-link');
-        div.appendChild(a);
-        output.appendChild(div);
+const output = document.querySelector('.repos');
 
-        if(element.description) {
-            let p = document.createElement('p');
-            p.textContent = element.description;
-            p.classList.add('project-description');
-            div.appendChild(p);
-        }
-    });
-})
+class API_GH {
+    constructor(token, userName) {
+        this.token = token,
+        this.userName = userName
+    }
+
+    async getRepos() {       
+        const repos = await fetch(`https://api.github.com/users/${this.userName}/repos`, {
+            headers: {
+            Authorization: `Bearer ${this.token}`
+            }}
+        );
+        const reposJson = await repos.json();       
+
+        reposJson.forEach((element) => {
+            let div = document.createElement('div');
+            let a = document.createElement('a');
+            a.setAttribute('href', `${element.html_url}`);
+            a.setAttribute('target', '_blank');
+            a.innerHTML = element.full_name;
+            div.classList.add('project-link');
+            div.appendChild(a);
+            output.appendChild(div);
+
+            if(element.description) {
+                let p = document.createElement('p');
+                p.textContent = element.description;
+                p.classList.add('project-description');
+                div.appendChild(p);
+            }
+        });
+    }
+}
+
+const projects = new API_GH('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', 'Elstarion');
+
+document.addEventListener('load', projects.getRepos());
