@@ -61,6 +61,6 @@ class API_GH {
     }
 }
 
-const projects = new API_GH('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', 'Elstarion');
+const projects = new API_GH('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', 'Elstarion');
 
 document.addEventListener('load', projects.getRepos());
