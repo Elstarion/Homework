@@ -33,12 +33,13 @@ class API_GH {
     }
 
     async getRepos() {       
-        const repos = await fetch(`https://api.github.com/users/${this.userName}/repos`, {
+        const repos = await fetch(`https://api.github.com/users/${this.userName}/repos`, {   
             headers: {
-            Authorization: `Bearer ${this.token}`
+                Authorization: `Bearer ${this.token}`
             }}
         );
-        const reposJson = await repos.json();       
+        const reposJson = await repos.json();
+        console.log(reposJson)
 
         reposJson.forEach((element) => {
             let div = document.createElement('div');
@@ -60,6 +61,6 @@ class API_GH {
     }
 }
 
-const projects = new API_GH('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', 'Elstarion');
+const projects = new API_GH('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', 'Elstarion');
 
 document.addEventListener('load', projects.getRepos());
