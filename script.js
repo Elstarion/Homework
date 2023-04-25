@@ -62,5 +62,7 @@ class API_GH {
 }
 
 const projects = new API_GH('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', 'Elstarion');
+// Token gets revoked by GitHub after being pushed to the public repository
+// https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/token-expiration-and-revocation#token-revoked-when-pushed-to-a-public-repository-or-public-gist
 
 document.addEventListener('load', projects.getRepos());
