@@ -2,6 +2,10 @@ import image from './photo_2023.png'
 
 import './styles.css';
 
+function Counter() {
+  return
+}
+
 function Photo(props) {
   return <img src={props.image} />
 }
