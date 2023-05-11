@@ -69,7 +69,7 @@
   .container .left-section .contact {
     margin: 50px 11px auto 40px;
   }
-  .container .left-section .contact .title {
+  .title {
     width: 289px;
     font-size: 32px;
     line-height: 39px;
@@ -88,7 +88,7 @@
     line-height: 29px;
     color: var(--color-main);
   }
-  .container .left-section .contact .contact-grid div .contact-item {
+.contact-item {
     font-size: 16px;
     line-height: 19px;
     color: var(--color-main);
@@ -98,6 +98,17 @@
     line-height: 24px;
     color: var(--color-main);
     padding-bottom: 15px;
+  }
+  .counter {
+    display: inline-block;
+    padding: 0 15px 15px 15px;
+    font-size: 20px;   
+  }
+  .btn-counter {
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 90px;
   }
   .container .transition {
     transform: scale(1.75) translate(82.5px, 20%);
